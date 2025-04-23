@@ -110,7 +110,7 @@ hr {
     color: black;
 }
 
-#iproduto{
+#iproduto {
     color: black;
     font-size: 1.2em;
     padding: 10px;
@@ -138,34 +138,60 @@ hr {
 }
 
 @media (max-width: 600px) {
-.esquerda{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+
+header {
+max-width: 100%;
 }
 
-.direita {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+#sla{
+        width: 100%;
+        max-width: 540px;
+        box-sizing: border-box;
+        margin: 0 auto;
+}
+
+.cadastro-loja {
+width: 100%;
+padding: 0 1em;
+}
+
+.esquerda h1 {
+font-size: 1.5em;
 }
 
 #info h2 {
-    font-size: 1.4em;
+font-size: 1.2em;
 }
 
-#info h3 {
-    font-size: 1em;
+.campo input {
+font-size: 1em;
+width: 100%;
+box-sizing: border-box;
 }
 
-.botoes {
-    flex-direction: column;
+#iproduto {
+width: 100%;
+border-radius: 10px;
+box-sizing: border-box;
 }
 
 .botoes button {
-    width: 100%;
-    max-width: 250px;
+font-size: 1em;
+padding: 0.8em 1.5em;
+width: 100%; 
+box-sizing: border-box;
+}
+
+#info {
+    max-width: 600px;
+}
+
+.cadastro {
+    max-width: 600px;
+}
+
+.botoes button {
+    font-size: 1.1em;
 }
 }
 
@@ -185,7 +211,7 @@ hr {
 }
 
 /* 992px até 1200px: Desktops */
-@media (min-width: 992px){
+@media (min-width: 992px) {
 .cadastro-loja,#info {
     width: 900px;
 }
@@ -207,14 +233,15 @@ hr {
     padding: 1em 2em;
 }
 }
+
 #info {
-max-width: 900px;
+    max-width: 900px;
 }
 
 .cadastro {
-max-width: 900px;
+    max-width: 900px;
 }
 
 .botoes button {
-font-size: 1.1em;
+    font-size: 1.1em;
 }
