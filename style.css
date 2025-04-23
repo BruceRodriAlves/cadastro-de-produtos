@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,7 +6,7 @@
 }
 
 
-body{
+body {
     background-color: #0b0c1f;
 }
 
@@ -57,7 +57,7 @@ section h1 {
     text-align: center;
 }
 
-#info{
+#info {
     background: linear-gradient(135deg, #1e1e4f, #3a3a8a);
     padding: 15px;
     width: 500px;
@@ -78,7 +78,7 @@ section h1 {
     margin-bottom: 8px;
 }
 
-hr{
+hr {
     margin-bottom: 7px;
 }
 
@@ -110,13 +110,19 @@ hr{
     color: black;
 }
 
-.botoes{
+#iproduto{
+    color: black;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.botoes {
     display: flex;
     justify-content: space-around;
     margin-top: 5px;
 }
 
-.botoes button{
+.botoes button {
     background: linear-gradient(135deg, #282852, #545491);
     color: rgb(0, 0, 0);
     border: none;
@@ -127,10 +133,88 @@ hr{
     transition: background-color 0.3s
 }
 
-.botoes button:hover{
+.botoes button:hover {
     background-color: #0056b3;
 }
 
-@media screen {
-    
+@media (max-width: 600px) {
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#info h2 {
+    font-size: 1.4em;
+}
+
+#info h3 {
+    font-size: 1em;
+}
+
+.botoes {
+    flex-direction: column;
+}
+
+.botoes button {
+    width: 100%;
+    max-width: 250px;
+}
+}
+
+/* 768px até 992px: Tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+#info {
+    max-width: 700px;
+}
+
+#info h2 {
+    font-size: 2.2em;
+}
+
+.cadastro {
+    max-width: 600px;
+}
+}
+
+/* 992px até 1200px: Desktops */
+@media (min-width: 992px){
+.cadastro-loja,#info {
+    width: 900px;
+}
+
+.esquerda h1 {
+    font-size: 2em;
+}
+
+#info h2 {
+    font-size: 2.5em;
+}
+
+.campo input {
+    font-size: 1.2em;
+}
+
+.botoes button {
+    font-size: 1.1em;
+    padding: 1em 2em;
+}
+}
+#info {
+max-width: 900px;
+}
+
+.cadastro {
+max-width: 900px;
+}
+
+.botoes button {
+font-size: 1.1em;
 }
