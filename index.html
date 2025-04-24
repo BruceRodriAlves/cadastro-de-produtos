@@ -6,7 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de ADM</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+    background: linear-gradient(120deg, #f0f2f5, #e2e6ec);
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e4f;
+    color: white;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.esquerda h1{
+    margin-left: 40px;
+}
+
+.botao-voltar {
+    height: 40px;
+    cursor: pointer;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#perfil {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.direita h2 {
+    font-size: 16px;
+    color: #ddd;
+    margin: 0;
+    text-align: right;
+}
+
+section h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#info {
+    background: linear-gradient(135deg, #1e1e4f, #3a3a8a);
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: white;
+}
+
+#info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#info h3 {
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.cadastro-loja {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+#idescricao {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus,
+#idescricao:focus {
+    border-color: #1e1e4f;
+}
+
+.campo {
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+#isala{
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+select {
+    height: 30px;
+    font-size: 0.85em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botoes button {
+    background: linear-gradient(135deg, #29296d, #4949a3);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 5px;
+}
+
+.botoes button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #3a3aa0, #5e5ed0);
+}
+
+@media (max-width: 600px) {
+    #info {
+        width: 90%;
+    }
+
+    .botoes button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    #info {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    #info {
+        max-width: 900px;
+    }
+}
+    </style>
 </head>
 
 <body>
@@ -16,9 +203,8 @@
             <h1>Administrador</h1>
         </div>
         <div class="direita">
-            <h2>xxxx xxxx xxxx xxxx</h2>
-            <img id="perfil" src="https://i.pinimg.com/736x/b1/13/e3/b113e39b5949ffd4776b494f1f1b559c.jpg"
-                alt="Foto de perfil">
+            <img id="perfil" src="https://i.pinimg.com/736x/b1/13/e3/b113e39b5949ffd4776b494f1f1b559c.jpg"alt="Foto de perfil">
+            <h2>Bruce Alves Rodrigues</h2>
         </div>
     </header>
     <hr>
@@ -33,30 +219,32 @@
                 </div>
                 <div class="campo">
                     <label for="isala">Sala</label>                    
-                    <select name="sala" id="isala">
-                        <option value="">Selecione uma série</option>
-                        <option value="2A">2º Ano - A</option>
-                        <option value="2B">2º Ano - B</option>
-                        <option value="2C">2º Ano - C</option>
-                        <option value="2D">2º Ano - D</option>
-                        <option value="2E">2º Ano - E</option>
-                        <option value="2F">2º Ano - F</option>
-                        <option value="2G">2º Ano - G</option>
-                        <option value="2H">2º Ano - H</option>
-                        <option value="2DM">2º Ano - DM</option>                        
-                        <option value="2DT">2º Ano - DT</option>
-                        <option value="3A">3º Ano - A</option>
-                        <option value="3B">3º Ano - B</option>
-                        <option value="3C">3º Ano - C</option>
-                        <option value="3D">3º Ano - D</option>
-                        <option value="3E">3º Ano - E</option>
-                        <option value="3F">3º Ano - F</option>
-                        <option value="3G">3º Ano - G</option>
-                        <option value="3H">3º Ano - H</option>
-                        <option value="3F1">3º Ano - F1</option>
-                        <option value="3F2">3º Ano - F2</option>
-                        <option value="3D1">3º Ano - D1</option>
-                        <option value="3D2">3º Ano - D2</option>
+                    <div class="select-wrapper">
+                        <select name="sala" id="isala">
+                            <option value="">Selecione uma série</option>
+                            <option value="2A">2º Ano - A</option>
+                            <option value="2B">2º Ano - B</option>
+                            <option value="2C">2º Ano - C</option>
+                            <option value="2D">2º Ano - D</option>
+                            <option value="2E">2º Ano - E</option>
+                            <option value="2F">2º Ano - F</option>
+                            <option value="2G">2º Ano - G</option>
+                            <option value="2H">2º Ano - H</option>
+                            <option value="2DM">2º Ano - DM</option>
+                            <option value="2DT">2º Ano - DT</option>
+                            <option value="3A">3º Ano - A</option>
+                            <option value="3B">3º Ano - B</option>
+                            <option value="3C">3º Ano - C</option>
+                            <option value="3D">3º Ano - D</option>
+                            <option value="3E">3º Ano - E</option>
+                            <option value="3F">3º Ano - F</option>
+                            <option value="3G">3º Ano - G</option>
+                            <option value="3H">3º Ano - H</option>
+                            <option value="3F1">3º Ano - F1</option>
+                            <option value="3F2">3º Ano - F2</option>
+                            <option value="3D1">3º Ano - D1</option>
+                            <option value="3D2">3º Ano - D2</option>
+                    </div>
                     </select>
                 <div class="campo">
                     <label for="iproduto">Produto</label>
