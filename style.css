@@ -215,7 +215,8 @@ transition: border-color 0.3s;
 
 @media (min-width: 768px) {
     #info {
-        max-width: 700px;
+        min-width: 1000px;
+        
     }
 
     #isala, #iproduto, #inome{
@@ -232,10 +233,14 @@ transition: border-color 0.3s;
     width: 350px;
     transition: border-color 0.3s;
     }
-    
 }
-
-@media (min-width: 992px) {
+    
+    @media (min-width: 768px) {
+        #info {
+            width: 90%;
+            margin: 10px auto;
+        }
+        
     .campo input, #idescricao, #isala, #iproduto, #inome {
         font-size: 1.5em; /* Tamanho da fonte ajustado */
         padding: 10px; /* Aumenta o padding para melhor usabilidade */
@@ -243,25 +248,24 @@ transition: border-color 0.3s;
         width: 100%; /* Ajusta para 100% da largura do contêiner pai */
         max-width: 400px; /* Define uma largura máxima para os campos */
     }
-
-    #info {
-        max-width: 950px; /* Define uma largura máxima em vez de mínima */
-        margin: 0 auto; /* Centraliza o contêiner */
+    
+    .esquerda {
+    font-size: 2em; 
     }
 
-    .esquerda {
-        font-size: 3em; /* Tamanho da fonte ajustado */
+    .esquerda h1 {
+    margin-left: 90px;
     }
 
     .botao-voltar {
-        height: 100px; /* Altura do botão de voltar */
+        height: 100px; 
     }
 
     .direita h2 {
-        font-size: 2em; /* Ajusta o tamanho da fonte do título */
+        font-size: 2em;
     }
 
     .direita h3 {
-        font-size: 3em; /* Ajusta o tamanho da fonte do subtítulo */
+        font-size: 3em;
     }
-} /* Fim da media query */
+}
