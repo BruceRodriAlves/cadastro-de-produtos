@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -26,7 +26,7 @@ header {
 }
 
 .botao-voltar {
-    height: 30px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -52,31 +52,40 @@ section h1 {
     background: linear-gradient(135deg, #1e1e4f, #3a3a8a);
     padding: 20px;
     max-width: 600px;
-    border-radius: 10px;
-    margin: 20px auto;
+    border-radius: 30px;
+    margin: 100px auto;
     color: white;
+
 }
 
 #info h2 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 #info h3 {
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: lighter;
     margin-bottom: 15px;
 }
 
+.blocoMae{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .cadastro-loja {
-    display: flex;
     flex-direction: column;
     gap: 15px;
+    display: flex;
 }
 
 .campo {
     display: flex;
     flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-top: 5px;
 }
 
 .campo label {
@@ -85,13 +94,13 @@ section h1 {
 }
 
 .campo input,
-#idescricao {
+#idescricao, #isala {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 15px;
     font-size: 1em;
     width: 100%;
     transition: border-color 0.3s;
+    background-color: #c7c7f79a;
 }
 
 .campo input:focus,
@@ -99,20 +108,21 @@ section h1 {
     border-color: #1e1e4f;
 }
 
-.campo {
-    color: rgb(255, 255, 255);
-    font-size: 0.9em;
-    margin-top: 5px;
+
+#isala, #iproduto, #inome{
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
 }
 
 #isala{
-    width: 200px;
-    height: 20px;
-
+    height: 40px;
+    font-size: 1.1em;
 }
+
 .botoes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
@@ -120,12 +130,12 @@ section h1 {
     background: linear-gradient(135deg, #282852, #545491);
     color: white;
     border: none;
-    border-radius: 20px;
-    font-size: 1.1em;
-    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    flex: 1;
+    width: 200px;
     margin: 0 5px;
 }
 
@@ -134,24 +144,107 @@ section h1 {
 }
 
 @media (max-width: 600px) {
-    #info {
-        width: 90%;
-    }
 
-    .botoes button {
-        width: 100%;
-        padding: 15px;
-    }
+
+
+#isala, #iproduto, #inome{
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.campo input, #idescricao {
+padding: 10px;
+border-radius: 15px;
+font-size: 18px;
+width: 220px;
+transition: border-color 0.3s;
+}
+
+#info {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.botoes button {
+    width: 100%;
+    padding: 15px;
+}
+
+#isala, #iproduto, #inome{
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.campo input, #idescricao {
+padding: 10px;
+border-radius: 15px;
+font-size: 18px;
+width: 130px;
+transition: border-color 0.3s;
+}
+
 }
 
 @media (min-width: 768px) {
     #info {
         max-width: 700px;
     }
+
+    #isala, #iproduto, #inome{
+        border-radius: 10px;
+        width: 250px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .campo input, #idescricao {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    width: 350px;
+    transition: border-color 0.3s;
+    }
+    
 }
 
 @media (min-width: 992px) {
     #info {
-        max-width: 900px;
+        min-width: 900px;
     }
+
+    .esquerda{
+        font-size: 3em;
+    
+    }
+
+    .botao-voltar{
+        height: 100px;
+    }
+ 
+    .info h2{
+        font-size: 3em;
+    }
+
+    .info h3{
+        font-size: 5em;
+    }
+}
+
+.blocoMae {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mantém os blocos lado a lado */
+    margin-top: 20px;
+}
+
+.bloco1 {
+    width: 200px; /* Aumenta a largura do bloco 1 */
+    margin-left: 30px ;
+}
+
+.bloco2 {
+    width: 350px; /* Aumenta a largura do bloco 2 */
 }

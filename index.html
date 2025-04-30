@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de ADM</title>
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -27,45 +29,56 @@
         <h3>Faça seu cadastro</h3>
         <hr>
         <section class="cadastro-loja">
-                <div class="campo">
-                    <label for="inome">Nome da loja</label>
-                    <input type="text" id="inome" name="nome">
+
+            <div class="blocoMae">
+                <div class="bloco1">
+                    <div class="campo">
+                        <label for="inome">Nome da loja</label>
+                        <input type="text" id="inome" name="nome">
+                    </div>
+                    <div class="campo">
+                        <label for="isala">Sala</label>
+                            <select name="sala" id="isala">
+                                <option value="">Selecione uma série</option>
+                                <option value="2A">2º Ano - A</option>
+                                <option value="2B">2º Ano - B</option>
+                                <option value="2C">2º Ano - C</option>
+                                <option value="2D">2º Ano - D</option>
+                                <option value="2E">2º Ano - E</option>
+                                <option value="2F">2º Ano - F</option>
+                                <option value="2G">2º Ano - G</option>
+                                <option value="2H">2º Ano - H</option>
+                                <option value="2DM">2º Ano - DM</option>
+                                <option value="2DT">2º Ano - DT</option>
+                                <option value="3A">3º Ano - A</option>
+                                <option value="3B">3º Ano - B</option>
+                                <option value="3C">3º Ano - C</option>
+                                <option value="3D">3º Ano - D</option>
+                                <option value="3E">3º Ano - E</option>
+                                <option value="3F">3º Ano - F</option>
+                                <option value="3G">3º Ano - G</option>
+                                <option value="3H">3º Ano - H</option>
+                                <option value="3F1">3º Ano - F1</option>
+                                <option value="3F2">3º Ano - F2</option>
+                                <option value="3D1">3º Ano - D1</option>
+                                <option value="3D2">3º Ano - D2</option>
+                            </select>
+                        <div class="campo">
+                            <label for="iproduto">Produto</label>
+                            <input type="text" id="iproduto" name="Produto">
+                        </div>
+                    </div>
                 </div>
-                <div class="campo">
-                    <label for="isala">Sala</label>                    
-                    <select name="sala" id="isala">
-                        <option value="">Selecione uma série</option>
-                        <option value="2A">2º Ano - A</option>
-                        <option value="2B">2º Ano - B</option>
-                        <option value="2C">2º Ano - C</option>
-                        <option value="2D">2º Ano - D</option>
-                        <option value="2E">2º Ano - E</option>
-                        <option value="2F">2º Ano - F</option>
-                        <option value="2G">2º Ano - G</option>
-                        <option value="2H">2º Ano - H</option>
-                        <option value="2DM">2º Ano - DM</option>                        
-                        <option value="2DT">2º Ano - DT</option>
-                        <option value="3A">3º Ano - A</option>
-                        <option value="3B">3º Ano - B</option>
-                        <option value="3C">3º Ano - C</option>
-                        <option value="3D">3º Ano - D</option>
-                        <option value="3E">3º Ano - E</option>
-                        <option value="3F">3º Ano - F</option>
-                        <option value="3G">3º Ano - G</option>
-                        <option value="3H">3º Ano - H</option>
-                        <option value="3F1">3º Ano - F1</option>
-                        <option value="3F2">3º Ano - F2</option>
-                        <option value="3D1">3º Ano - D1</option>
-                        <option value="3D2">3º Ano - D2</option>
-                    </select>
-                <div class="campo">
-                    <label for="iproduto">Produto</label>
-                    <input type="text" id="iproduto" name="Produto">
+                
+                <div class="bloco2">
+                    
+                    <div class="campo">
+                        <label for="idescricao">Descrição</label>
+                        <textarea name="Descrição" rows="7" id="idescricao"></textarea>
+                    </div>
                 </div>
-                </div>
-                <div class="campo">
-                    <label for="idescricao">Descrição</label>
-                    <textarea name="Descrição" rows="4" id="idescricao"></textarea>
+            </div>
+                    </div>
                 </div>
         </section>
         <div class="botoes">
